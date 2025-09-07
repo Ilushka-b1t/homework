@@ -1,0 +1,27 @@
+.block_1 {
+    color: white;
+    background: #FF7100;
+
+}
+
+.block_1__span{
+    color:#A66F00;
+}
+
+.block_1__square{
+    background: #FFA900;
+    width: 100px;
+    height: 100px;
+}
+
+.block_2{
+    background:#6A48D7;
+    width: 300px;
+
+}
+
+.block_2__span{
+    color: white;
+    background: #200772		;
+
+}
