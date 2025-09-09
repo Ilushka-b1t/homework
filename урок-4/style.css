@@ -1,0 +1,22 @@
+header{
+    background-color: #fdc140;
+    height: 60px;
+}
+
+header a{
+    color: black;
+}
+
+.quote_block{
+    background-color: #ffe7cd;
+}
+
+footer{
+    background-color: #7573D9;
+    color: white;
+    height: 300px;
+}
+
+footer a{
+    color: white;
+}
