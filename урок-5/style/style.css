@@ -1,0 +1,35 @@
+.block_1{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;   
+    font-style: italic 
+}
+
+.block_2{
+    text-decoration: line-through;    
+}
+
+.block_3{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.block_4{
+    text-decoration-line: overline;
+    text-decoration-style: wavy;
+    color:blueviolet;
+    font-style: normal;
+    word-spacing: 30px;
+
+}
+
+.block_5{
+    letter-spacing: 5px;
+    text-decoration: underline double;
+}
+
+.block_6{
+    text-shadow: 2px 3px 5px #6dec0b;
+}
+
