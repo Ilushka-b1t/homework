@@ -1,0 +1,22 @@
+.large_block{
+    background-color:#ecdae7;
+    border: 1px solid;  
+    height: 500px;
+    border-radius: 20px 0 0 20px;
+    overflow: auto;
+}
+
+.block{
+    width: 250px;
+    height: 200px;
+    background-color: #d0b099;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 5px #000;
+    display: inline-block;
+    margin: 5px;
+    
+}
+
+.text{
+    padding: 5px 20px;
+}
