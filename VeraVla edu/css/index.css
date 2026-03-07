@@ -1,0 +1,15 @@
+@import "./base/reset.css";
+@import "../css/base/fonts.css";
+@import "./base/vars.css";
+@import "./base/globals.css";
+@import "./base/sections/header.css";
+@import "./base/sections/section_reasons-1.css";
+@import "./base/sections/section_AI-2.css";
+@import "./base/sections/section_understanding-3.css";
+@import "./base/sections/section_advantages-4.css";
+@import "./base/sections/section_studying-5.css";
+@import "./base/sections/section_author-6.css";
+@import "./base/sections/section_announcement-7.css";
+@import "./base/sections/section_vacencies-8.css";
+@import "./base/sections/footer.css";
+@import "./base/sections/modal.css";

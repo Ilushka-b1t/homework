@@ -1,0 +1,31 @@
+:root {
+    /* font */
+    --font--site: "Avenir Next Cyr", sans-serif;
+
+
+    /* color */
+    --color--white: #ffffff;
+    --color--blue: #00E0FF;
+    --color--blue--accent: #4abcec;
+    --color--grey: #747d81;
+    --color--title--accent: #08b1b9;
+    --color--background--modal: #000000c1;
+
+    /* border */
+    --border-color: conic-gradient(from 35deg, #2a66802e 0deg, #2a66802e 80deg, #49b9e861 115deg, #49b9e873 125deg, #49b9e861 130deg, #28627a33 200deg, #28627a33 260deg, #49b9e861 295deg, #49b9e873 305deg, #49b9e861 310deg, #1f4d602e 360deg);
+
+    /* gradient */
+    --color--page--shadow: 0 0 24px 0 #00e0ff, 0 4px 15px 0 #4ad9ec, 0 3px 15px 0 rgba(0, 224, 255, 0.93);
+    --color--background--light: linear-gradient(286.41deg, #022335 3.63%, #043A41 90.98%);
+    --color--background--dark: linear-gradient(90deg, #011c2b 0%, #092a2e 100%);
+    --color--details--background: linear-gradient(313deg, #073447 0%, #08262b 100%);
+    --color--ellipse--details: linear-gradient(180deg, #00e0ff 0%, #4a8bec 100%);
+    --color--background--form: linear-gradient(313deg, #033958 0%, #0f6b78 100%);
+    --color--button--content: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13cdc2 100%);
+    --color--menu--shadow: 0 4px 34px 0 rgba(0, 0, 0, 0.35);
+    --color--menu--background: linear-gradient(313deg, #0b4d69 0%, #104c54 100%);
+
+        /* transition */
+        --transition--effect: 0.3s all;
+
+}
