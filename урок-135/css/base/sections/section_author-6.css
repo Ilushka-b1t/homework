@@ -1,0 +1,177 @@
+.section__author {
+    position: relative;
+    padding-bottom: 0px;
+}
+
+
+
+.author__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 95px;
+}
+
+.author__title {
+    margin-bottom: 50px;
+}
+
+
+.author__desription {
+    align-self: self-start;
+    padding-top: 30px;
+    max-width: 490px;
+}
+
+
+.author__paragraph {
+    position: relative;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 160%;
+    margin-bottom: 30px;
+}
+
+.paragraph-blick::before {
+    content: "";
+    position: absolute;
+    background: url("../../../icons/sprites/blick-cards.svg");
+    width: 65px;
+    height: 30px;
+    left: -20px;
+    top: -4px;
+}
+
+
+
+
+.author__block-person {
+    position: relative;
+    max-width: 441px;
+    max-height: 672px;
+    z-index: 2;
+}
+
+
+
+.author__image-person--mobile {
+    display: none;
+}
+
+
+.author__info {
+    position: absolute;
+    bottom: 95px;
+    right: 0px;
+    max-width: 185px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.author__name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 83%;
+    color: var(--color--blue);
+}
+
+.author__profession {
+    font-size: 14px;
+    line-height: 143%
+}
+
+.author__block-background {
+    z-index: 1;
+    position: absolute;
+    top: 155px;
+    right: 0;
+    mix-blend-mode: lighten;
+}
+
+
+
+/* Адаптив */
+
+@media (width <=1100px) {
+    .author__wrapper {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .author__title {
+        margin-bottom: 30px;
+    }
+
+    .author__paragraph {
+        margin-bottom: 5px;
+    }
+
+    .author__desription {
+        max-width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .author__block-person img {
+        max-width: 100%;
+    }
+
+    .author__block-background {
+        bottom: 40px;
+        top: auto;
+        right: 0px;
+    }
+}
+
+
+
+@media (width <=768px) {
+
+    .author__image-person--main {
+        display: none;
+    }
+
+    .author__image-person--mobile {
+        display: block;
+    }
+
+    .author__info {
+        bottom: 30px;
+        right: -60px;
+    }
+
+    .author__block-background {
+        bottom: 0px;
+        right: 5%;
+    }
+}
+
+@media (width <=578px) {
+
+    .author__name {
+        font-size: 18px;
+    }
+
+    .author__desription {
+        font-size: 14px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .author__profession {
+        font-size: 12px;
+    }
+
+
+
+    .author__info {
+        right: -20px;
+    }
+
+    .author__block-background {
+        bottom: 0%;
+        right: -25%;
+    }
+
+
+}

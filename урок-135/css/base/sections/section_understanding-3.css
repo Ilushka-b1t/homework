@@ -1,0 +1,94 @@
+.section__understanding {
+    position: relative;
+}
+
+
+
+.understanding__list {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 42px 45px;
+}
+
+.understanding__list-item {
+    max-width: 568px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.understanding__list-cover {
+    border-radius: 20px;
+    max-width: 285px;
+    position: relative;
+
+}
+
+.understanding__list-icon {
+    border-radius: 20px;
+    opacity: 0.5;
+    width: 100%;
+}
+
+
+.understanding__list-cover::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2.5px;
+    border-radius: inherit;
+    background: var(--border-color);
+    -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+
+.understanding__list-cover::after {
+    content: "";
+    background: url("../../../icons/sprites/blick-cards.svg");
+    width: 65px;
+    height: 30px;
+    position: absolute;
+    left: 30px;
+    bottom: -15px;
+}
+
+.understanding__list-text {
+    max-width: 260px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 144%;
+}
+
+
+/* Адаптив */
+
+@media (width <=1060px) {
+
+    .understanding__list {
+        gap: 20px 25px;
+    }
+
+    .understanding__list-item {
+        flex-direction: column;
+    }
+
+    .understanding__list-item:nth-child(3), .understanding__list-item:nth-child(4) {
+        flex-direction: column-reverse;
+        justify-content: start;
+    }
+}
+
+@media (width <=578px) {
+    .understanding__list-text {
+        font-size: 14px;
+        line-height: 121%;
+    }
+}

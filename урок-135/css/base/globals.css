@@ -1,0 +1,243 @@
+html, body {
+    font-family: var(--font--site);
+    font-weight: 500;
+    max-width: 100%;
+
+}
+
+
+.page {
+    min-height: 100vh;
+    min-width: 320px;
+
+}
+
+.page-modal--open {
+    overflow-y: hidden;
+}
+
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--color--white);
+
+}
+
+p, h1, h2, h3, h4 {
+    color: var(--color--white);
+
+}
+
+p {
+    font-size: 14px;
+}
+
+
+main, .container {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+}
+
+.background-light {
+    position: relative;
+    background: var(--color--background--light);
+}
+
+.background-dark {
+    position: relative;
+    background: var(--color--background--dark);
+}
+
+
+.background-light::before, .background-dark::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    box-shadow: var(--color--page--shadow);
+    filter: blur(2px);
+    width: 100%;
+    height: 1px;
+    z-index: 5;
+}
+
+.button__content {
+    border-radius: 9px;
+    width: 479px;
+    height: 60px;
+    box-shadow: 0 7px 20px -7px var(--color--blue);
+    background: var(--color--button--content);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color--white);
+}
+
+
+.section__reasons, .section__AI, .section__understanding, .section__advantages, .section__studying, .section__author, .section__announcement, .section__vacancies {
+    padding-top: clamp(50px, 1.16rem + 8.38vw, 120px);
+    padding-bottom: clamp(50px, 1.16rem + 8.38vw, 120px);
+}
+
+.sections-title {
+    font-weight: 450;
+    font-size: clamp(30px, 1.589rem + 2.38vw, 54px);
+    line-height: 66px;
+    text-transform: uppercase;
+    color: var(--color--white);
+}
+
+
+.return {
+    position: fixed;
+    left: -50px;
+    bottom: 110px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    transform: rotate(-90deg);
+    z-index: 10;
+    color: var(--color--blue);
+    opacity: 0;
+    visibility: hidden;
+    transition:  var(--transition--effect);
+}
+
+
+.return.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+.button-circle {
+    position: relative;
+    border-radius: 100%;
+    background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13cdc2 100%);
+    box-shadow: 0 7px 20px -7px #00e0ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+}
+
+.return__button {
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.return__button-pulse {
+    position: absolute;
+    background: var(--color--blue);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    z-index: -1;
+    animation: moving-vibration 3s infinite;
+
+}
+
+
+.return::after {
+    content: "Подняться вверх";
+    font-size: 10px;
+    letter-spacing: 0.36em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: 0;
+    overflow: hidden;
+    transition: var(--transition--effect);
+}
+
+
+.return:hover::after {
+    opacity: 1;
+}
+
+
+
+.sections-title span {
+    color: var(--color--blue--accent);
+}
+
+
+
+
+/* Анимации */
+
+@keyframes moving-vibration {
+
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.75);
+        opacity: 0.0;
+    }
+
+}
+
+/* Адаптив */
+
+
+@media (width <=1800px) {
+    .return {
+        left: -70px;
+        right: auto;
+        top: auto;
+        bottom: 100px;
+    }
+}
+
+@media(width <=900px) {
+
+    .return__button, .return__button-pulse {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media(width <=768px) {
+    .sections-title {
+        line-height: 55px;
+    }
+}
+
+
+@media(width <=450px) {
+
+    .return__button {
+        position: relative;
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .return__button-pulse {
+        width: 60px;
+        height: 60px;
+
+    }
+
+    .sections-title {
+        line-height: 45px;
+    }
+}
