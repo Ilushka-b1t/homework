@@ -1,0 +1,126 @@
+.section__reasons {
+    position: relative;
+}
+
+
+.section__reasons::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    box-shadow: var(--color--page--shadow);
+    filter: blur(2px);
+    width: 100%;
+    height: 1px;
+}
+
+
+.section__reasons::after {
+    content: "";
+    position: absolute;
+    top: -560px;
+    left: 50%;
+    background: url("../../../icons/sprites/blick-header.svg");
+    transform: translateX(-50%);
+    width: 945px;
+    height: 945px;
+    border-radius: 100%;
+    pointer-events: none;
+}
+
+
+.reasons__title {
+    max-width: 600px;
+    padding-bottom: 60px;
+}
+
+
+.reasons__cards {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    padding-bottom: 125px;
+}
+
+
+.reasons__item {
+    grid-column: span 3;
+    min-height: 212px;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: linear-gradient(180deg, rgba(0, 224, 255, 0.11) 0%, rgba(0, 224, 255, 0.11) 100%);
+    padding: 35px 38px 35px 42px;
+    position: relative;
+}
+
+
+.reasons__item-wide {
+    grid-column: span 4;
+    min-height: 220px;
+
+}
+
+
+.reasons__item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2.5px;
+    border-radius: inherit;
+    background: var(--border-color);
+    -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+
+.reasons__item::after {
+    content: "";
+    background: url("../../../icons/sprites/blick-cards.svg");
+    width: 65px;
+    height: 30px;
+    position: absolute;
+    left: 30px;
+    bottom: -15px;
+}
+
+.reasons__item-icon {
+    margin-bottom: 15px;
+}
+
+
+
+
+.reasons__item-text {
+    font-size: 15px;
+    line-height: 1.20;
+}
+
+
+
+@media (width <=1130px) {
+    .reasons__cards {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .reasons__item {
+        grid-column: auto;
+    }
+
+}
+
+@media (width <=800px) {
+    .reasons__title {
+        padding-bottom: 40px;
+        line-height: 55px;
+    }
+}
+
+
+@media (width <=400px) {
+    .reasons__item {
+        padding: 35px 15px 35px 30px;
+    }
+}
