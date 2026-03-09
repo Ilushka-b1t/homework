@@ -1,0 +1,148 @@
+.section__AI {
+    position: relative;
+}
+
+.AI__background {
+    background: (313deg, #022335 0%, #043a41 100%);
+}
+
+
+.section__AI::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    box-shadow: var(--color--page--shadow);
+    filter: blur(2px);
+    width: 100%;
+    height: 1px;
+}
+
+
+.AI__title {
+    max-width: 750px;
+    padding-bottom: 64px;
+}
+
+.AI__list {
+    margin-bottom: 70px;
+}
+
+
+.AI__list-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 8px 20px 25px;
+    gap: 20px;
+    max-width: 700px;
+    background: linear-gradient(90deg, rgba(31, 63, 77, 0.54) 0%, rgba(31, 75, 94, 0) 100%);
+    margin-bottom: 5px;
+
+}
+
+
+.AI__list-icon {
+    margin-top: -7px;
+
+}
+
+
+.AI__item-text {
+    width: 625px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 140%;
+    position: relative;
+}
+
+
+.AI__item-text::before {
+    content: "";
+    position: absolute;
+    background: url("../../../icons/Ellipse 4.svg");
+    width: 65px;
+    height: 30px;
+    left: -20px;
+    top: -4px;
+}
+
+
+.AI__icon {
+    mix-blend-mode: lighten;
+    max-width: 937px;
+    position: absolute;
+    top: 220px;
+    right: 0;
+}
+
+
+
+.AI__icon img {
+    max-width: 100%;
+}
+
+.AI__icon::before {
+    content: "";
+    background: url("../../../icons/AI-photos/AI_blicks.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 1070px;
+    height: 780px;
+    position: absolute;
+    z-index: 2;
+    top: -160px;
+    right: -130px;
+}
+
+.AI__icon-mobile {
+    display: none;
+}
+
+
+/* Адаптив */
+
+@media (width <= 1024px) {
+
+    .AI__list {
+        margin-bottom: 0px;
+    }
+
+    .AI__icon {
+        position: static;
+        margin: 20px 0px;
+    }
+
+
+    .AI__icon::before{
+        display: none;
+    }
+
+    .AI__title{
+        padding-bottom: 30px;
+    }
+
+
+
+}
+
+@media (width <=578px) {
+    .AI__button {
+        width: 100%;
+    }
+
+    .AI__item-text {
+        font-size: 14px;
+    }
+
+}
+
+
+@media (width <=375px) {
+    .AI__icon-main {
+        display: none;
+    }
+
+    .AI__icon-mobile {
+        display: block;
+    }
+
+}
